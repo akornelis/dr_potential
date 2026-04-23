@@ -9,7 +9,7 @@ dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
 # ===== 1. CUSTOMER COUNTS (year-varying: ~1% annual growth) =====
 num_years <- 10
 base_counts <- c(single_family = 70000, multi_family = 60000, manufactured_home = 55000,
-                 industrial = 500)
+                 industrial = 3500)
 growth_rates <- c(single_family = 0.010, multi_family = 0.010, manufactured_home = 0.010,
                   industrial = 0.005)
 customer_counts_df <- do.call(rbind, lapply(1:num_years, function(yr) {
@@ -35,9 +35,9 @@ res_segments <- c("single_family", "multi_family", "manufactured_home")
 res_impact_df <- expand.grid(product = res_products, segment = res_segments,
                               stringsAsFactors = FALSE)
 res_impact_df$impact_value <- ifelse(
-  res_impact_df$product == "byo_thermostat",   2.5,
-  ifelse(res_impact_df$product == "water_heater_dlc", 3.5,
-  0.02)  # PTR: 2% of baseline load
+  res_impact_df$product == "byo_thermostat",   1.2,
+  ifelse(res_impact_df$product == "water_heater_dlc", 0.3,
+  0.06)  # PTR: 6% of baseline load
 )
 res_impact_df$impact_unit <- ifelse(
   res_impact_df$product == "peak_time_rebate", "pct_of_load", "kw_per_customer"
