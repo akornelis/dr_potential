@@ -1,5 +1,7 @@
-data/
+data/*
+!data/templates/
 outputs/
+.claude/
 .Rhistory
 .RData
 .Rproj.user/

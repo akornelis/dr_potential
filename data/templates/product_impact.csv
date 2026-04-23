@@ -1,0 +1,11 @@
+product,segment,impact_value,impact_unit,sector
+byo_thermostat,single_family,2.5,kw_per_customer,
+byo_thermostat,multi_family,2.5,kw_per_customer,
+byo_thermostat,manufactured_home,2.5,kw_per_customer,
+water_heater_dlc,single_family,3.5,kw_per_customer,
+water_heater_dlc,multi_family,3.5,kw_per_customer,
+water_heater_dlc,manufactured_home,3.5,kw_per_customer,
+peak_time_rebate,single_family,0.02,pct_of_load,residential
+peak_time_rebate,multi_family,0.02,pct_of_load,residential
+peak_time_rebate,manufactured_home,0.02,pct_of_load,residential
+industrial_curtailment,industrial,0.30,pct_of_load,industrial

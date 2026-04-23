@@ -1,0 +1,11 @@
+product,segment,max_adoption_rate,annual_ramp_rate,event_optout_rate,first_year_adoption
+byo_thermostat,single_family,0.30,0.15,0.08,0.03
+byo_thermostat,multi_family,0.28,0.15,0.08,0.03
+byo_thermostat,manufactured_home,0.25,0.15,0.08,0.03
+water_heater_dlc,single_family,0.25,0.15,0.08,0.03
+water_heater_dlc,multi_family,0.23,0.15,0.08,0.03
+water_heater_dlc,manufactured_home,0.20,0.15,0.08,0.03
+peak_time_rebate,single_family,0.20,0.15,0.08,0.03
+peak_time_rebate,multi_family,0.18,0.15,0.08,0.03
+peak_time_rebate,manufactured_home,0.15,0.15,0.08,0.03
+industrial_curtailment,industrial,0.60,0.20,0.05,0.10

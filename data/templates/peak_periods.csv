@@ -1,0 +1,4 @@
+season,month_start,month_end,peak_start_hour,peak_end_hour
+summer,6,8,16,19
+winter,12,2,8,11
+winter,12,2,17,20
